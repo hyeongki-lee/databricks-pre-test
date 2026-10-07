@@ -1,0 +1,79 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+*.egg-info/
+dist/
+build/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+logs/
+
+# Data files (large)
+*.tsv
+*.csv
+*.parquet
+*.orc
+*.avro
+*.json.gz
+*.snappy
+
+# Docker volumes
+docker-volumes/
+
+# Secrets
+.env
+.env.local
+*.pem
+*.key
+
+# Temporary
+tmp/
+temp/
+*.tmp
+
+# Large directories from existing project
+work/
+migration-ruleset/
+etl-builder/
+etl-studio/
+etl-fabric/
+bg8/
+captures/
+manual-artifacts/
+manual-tasks/
+manual/
+out/
+
+# JRE/JDK (large)
+jre/
+jdk*/
+*.jre
+*.jdk
+
+# HTML manuals (generated)
+*.html
+!docs/*.md
+
+# Zip files
+*.zip
+*.z01
+*.z02
