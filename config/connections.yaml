@@ -1,0 +1,70 @@
+# 데이터베이스 접속 설정
+# 각 엔진별 접속 정보
+
+mysql:
+  host: localhost
+  port: 3306
+  user: root
+  password: rootpass
+  schemas:
+    - name: mysql_schema_1
+      description: MySQL 스키마 1
+    - name: mysql_schema_2
+      description: MySQL 스키마 2
+    - name: mysql_schema_3
+      description: MySQL 스키마 3
+    - name: mysql_schema_4
+      description: MySQL 스키마 4
+
+mongodb:
+  host: localhost
+  port: 27017
+  user: admin
+  password: rootpass
+  auth_source: admin
+  schemas:
+    - name: mongo_schema_1
+      description: MongoDB 스키마 1
+    - name: mongo_schema_2
+      description: MongoDB 스키마 2
+    - name: mongo_schema_3
+      description: MongoDB 스키마 3
+    - name: mongo_schema_4
+      description: MongoDB 스키마 4
+
+postgresql:
+  host: localhost
+  port: 5432
+  user: postgres
+  password: pgpass
+  schemas:
+    - name: pg_schema_1
+      description: PostgreSQL 스키마 1
+    - name: pg_schema_2
+      description: PostgreSQL 스키마 2
+    - name: pg_schema_3
+      description: PostgreSQL 스키마 3
+    - name: pg_schema_4
+      description: PostgreSQL 스키마 4
+
+# Databricks 설정
+databricks:
+  host: https://dbc-c6733d3c-c15f.cloud.databricks.com
+  warehouse_id: 074405e9ceba80af
+  catalog: workspace
+
+# S3 설정
+s3:
+  bucket: databricks-test-lhk
+  region: ap-northeast-2
+  base_path: /
+
+# Slack 설정
+slack:
+  channel: C0C53BAG812
+  token: ${SLACK_BOT_TOKEN}
+
+# Airflow 설정
+airflow:
+  dag_folder: C:\Users\lee21\lakehouse\airflow\dags
+  etl_dag_folder: C:\Users\lee21\lakehouse\airflow\dags\etl-fabric
